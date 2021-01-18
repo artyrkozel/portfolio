@@ -1,9 +1,12 @@
 import React from "react";
 import styles from './header.module.css'
+import Nav from "../nav/Nav";
 
 const Header = () => {
     return (
-        <div>Hello world</div>
+        <div className={styles.header}>
+            <Nav />
+        </div>
     )
 }
 

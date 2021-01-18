@@ -1,0 +1,22 @@
+.mainBlock{
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    width: 300px;
+}
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+}
