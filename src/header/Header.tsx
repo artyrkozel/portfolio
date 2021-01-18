@@ -3,7 +3,7 @@ import styles from './header.module.css'
 
 const Header = () => {
     return (
-        <div>Hello</div>
+        <div>Hello world</div>
     )
 }
 
