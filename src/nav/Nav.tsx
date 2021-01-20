@@ -1,14 +1,27 @@
 import React from "react";
 import styles from './nav.module.css'
 
+
 const Nav = () => {
     return (
-            <div className={styles.nav}>
-                <a href="#">Главная</a>
-                <a href="#">Скиллы</a>
-                <a href="#">Проекты</a>
-                <a href="#">Контакты</a>
-                <a href="#">Связаться со сной</a>
+            <div className={`${"collapse navbar-collapse"} ${styles.menu}`}>
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Skills</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Projects</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Contacts</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
             </div>
     )
 }

@@ -1,0 +1,11 @@
+.projectsBlock {
+    background-color: brown;
+    padding-top: 70px;
+}
+.title h2{
+ text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.42;
+}

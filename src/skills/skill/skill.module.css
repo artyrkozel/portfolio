@@ -8,7 +8,7 @@
     transition: all 0.5s ease;
     padding: 30px 30px 50px 30px;
     -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-    box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
+    box-shadow: rgba(6, 82, 221, 0.15) 0px 15px 30px 0px;
 }
 .body {
     position: relative;
@@ -49,7 +49,7 @@
     line-height: 60px;
     border-radius: 50%;
     color: #fff;
-    background: #ff4500;
+    background: rgb(6, 82, 221);
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -61,7 +61,7 @@
     line-height: 60px;
     border-radius: 50%;
     color: #fff;
-    background: #ff4500;
+    background: rgb(6, 82, 221);
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -83,7 +83,7 @@
     transition: all 0.5s ease;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 2px solid #ff4500;
+    border: 2px solid rgb(6, 82, 221);
     box-sizing: border-box;
     right: -20px;
     width: 100px;
@@ -100,7 +100,7 @@
     transition: all 0.5s ease;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 2px solid #ff4500;
+    border: 2px solid rgb(6, 82, 221);
     right: -10px;
     width: 80px;
     height: 80px;

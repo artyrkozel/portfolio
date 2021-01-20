@@ -1,16 +1,21 @@
 .skillBlock {
     height: 100vh;
+    padding-top: 70px;
 }
 .skillContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
-
+.skillBlock h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.42;
+}
 .skills {
-    border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 

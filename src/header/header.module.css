@@ -1,7 +1,6 @@
 .header {
-    height: 60px;
-    background-color: cornflowerblue;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    box-shadow: rgba(6, 82, 221, 0.1) 0px 3px 10px 0px;
 }
