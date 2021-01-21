@@ -1,6 +1,8 @@
 import React from "react";
-import styles from './main.module.css'
+import styles from './main.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
+import Title from "../common/headingTitle/Title";
+import Button from "../common/btn/Button";
 
 const Main = () => {
     return (
@@ -22,7 +24,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <button type="button" className="btn btn-primary">Главный</button>
+                    <Button />
                 </div>
             </div>
 

@@ -1,8 +1,9 @@
 import React from "react";
 import placholder from './../common/img/placholder.png'
-import styles from './projects.module.css'
+import styles from './projects.module.scss'
 import Project from "./project/Project";
 import cre from './../common/img/net.jpg'
+import Title from "../common/headingTitle/Title";
 
 
 const Projects = () => {
@@ -12,9 +13,7 @@ const Projects = () => {
     return (
         <div className={styles.projectsBlock}>
             <div className="container">
-                <div className={styles.title}>
-                    <h2>Projects</h2>
-                </div>
+                <Title title={'My projects'} subTitle={'projects'}/>
                 <div className="projects">
                     <div className="row justify-content-around">
                         <Project style={socialNetwork}/>

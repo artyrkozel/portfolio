@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './projectItem.module.css'
+import styles from './projectItem.module.scss'
 import placholder from "../../common/img/placholder.png";
 
 const Project = (props: any) => {
