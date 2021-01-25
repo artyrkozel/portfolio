@@ -1,0 +1,67 @@
+import React from 'react';
+import Drawer from "@material-ui/core/Drawer";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import {Link} from "react-scroll";
+import {createStyles, makeStyles, Theme} from "@material-ui/core";
+const SideDrawer = (props: any) => {
+    const drawerWidth = 240
+    const useStyles = makeStyles((theme: Theme) =>
+        createStyles({
+            drawerPaper: {
+                width: drawerWidth,
+            },
+            nav: {
+                padding: 20
+            }
+        }),
+    );
+    const classes = useStyles();
+    return (
+        <Drawer
+            anchor={"right"}
+            open={props.open}
+            onClose={() => props.onClose(false)}
+            className={classes.drawerPaper}
+            classes={{
+                paper: classes.drawerPaper,
+            }}
+        >
+            <List component="nav" className={classes.nav}>
+                <ListItem button>
+                    <Link
+                        activeClass="active"
+                        to="main"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >Home</Link>
+                </ListItem>
+                <ListItem button>
+                    <Link
+                        activeClass="active"
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >Skills</Link>
+                </ListItem>
+
+                <ListItem button onClick={() => console.log(" Our Team")}>
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >Projects</Link>
+                </ListItem>
+            </List>
+        </Drawer>
+    );
+};
+
+export default SideDrawer;

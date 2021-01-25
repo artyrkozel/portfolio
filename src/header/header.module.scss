@@ -1,6 +1,13 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: rgba(6, 82, 221, 0.1) 0px 3px 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  IconButton{
+    background: red
+  }
+}
+.headerLogo {
+  position: relative;
+  left: 10%;
 }

@@ -5,6 +5,14 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import "bootstrap/dist/css/bootstrap.css"
 import Projects from "./projects/Projects";
+import Contacts from "./contacts/Contacts";
+
+
+
+
+
+
+
 
 function App() {
   return (
@@ -14,6 +22,7 @@ function App() {
                 <Main />
                 <Skills />
                 <Projects />
+                <Contacts />
             </header>
 
     </div>

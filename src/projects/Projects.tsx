@@ -1,23 +1,22 @@
 import React from "react";
-import placholder from './../common/img/placholder.png'
 import styles from './projects.module.scss'
 import Project from "./project/Project";
 import cre from './../common/img/net.jpg'
 import Title from "../common/headingTitle/Title";
-
+import todo from '././../common/img/todo.png'
 
 const Projects = () => {
     const socialNetwork = {
-        backgroundImage: `url(${cre})`
+        backgroundColor: '#FFF'
     }
     return (
-        <div className={styles.projectsBlock}>
+        <div className={styles.projectsBlock} id={"projects"}>
             <div className="container">
                 <Title title={'My projects'} subTitle={'projects'}/>
                 <div className="projects">
                     <div className="row justify-content-around">
-                        <Project style={socialNetwork}/>
-                        <Project/>
+                        <Project style={socialNetwork} img={cre}/>
+                        <Project style={socialNetwork} img={todo}/>
                     </div>
                 </div>
             </div>
