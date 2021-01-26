@@ -17,14 +17,11 @@ import Contacts from "./contacts/Contacts";
 function App() {
   return (
     <div className={styles.App}>
-            <header className={styles.App}>
                 <Header />
                 <Main />
                 <Skills />
                 <Projects />
                 <Contacts />
-            </header>
-
     </div>
   );
 }

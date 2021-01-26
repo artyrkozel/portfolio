@@ -10,17 +10,19 @@ const Projects = () => {
         backgroundColor: '#FFF'
     }
     return (
-        <div className={styles.projectsBlock} id={"projects"}>
-            <div className="container">
-                <Title title={'My projects'} subTitle={'projects'}/>
-                <div className="projects">
-                    <div className="row justify-content-around">
-                        <Project style={socialNetwork} img={cre}/>
-                        <Project style={socialNetwork} img={todo}/>
+        <section className={`${styles.projectsBlock} ${styles.section}`} id={"projects"}>
+                <div className="container">
+                    <Title title={'My projects'} subTitle={'projects'}/>
+                    <div className="projects">
+                        <div className="row justify-content-around">
+                            <Project style={socialNetwork} img={cre}/>
+                            <Project style={socialNetwork} img={todo}/>
+                            <Project style={socialNetwork} img={todo}/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+        </section>
+
 
     )
 }

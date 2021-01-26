@@ -19,29 +19,30 @@ const Main = () => {
         }
     }
     return (
-
-        <div className={styles.mainBlock} id={"main"}>
-            <Particles className={styles.particles} params={params}/>
-            <div className="container">
-                <div className="row justify-content-between align-items-center">
-                    <div className="col-md-4">
-                        <Fade direction="left">
-                        <span className={styles.subTitle}>Hi there</span>
-                            <h1 className={styles.title}>I am Artur</h1>
-                            <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
+        <main className={styles.mainBlock} id={"main"}>
+                <Particles className={styles.particles} params={params}/>
+                <div className="container">
+                    <div className="row justify-content-between align-items-center">
+                        <div className="col-md-4">
+                            <Fade direction="left">
+                                <span className={styles.subTitle}>Hi there</span>
+                                <h1 className={styles.title}>I am Artur</h1>
+                                <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
+                            </Fade>
+                        </div>
+                        <Fade direction="right">
+                            <div className={`${'col-md-4'} ${styles.photo}`}>
+                                <span></span>
+                                <img src={photo} alt=""/>
+                            </div>
                         </Fade>
                     </div>
-                    <Fade direction="right">
-                    <div className={`${'col-md-4'} ${styles.photo}`}>
-                        <img src={photo} alt=""/>
+                    <div className="row">
+                        <Button title={"view works"}/>
                     </div>
-                    </Fade>
                 </div>
-                <div className="row">
-                    <Button title={"view works"}/>
-                </div>
-            </div>
-        </div>
+        </main>
+
 
     )
 }

@@ -1,25 +1,64 @@
-.btn a{
-  text-decoration: none;
+.btn {
   z-index: 1;
-  padding: 15px;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 50px;
-  letter-spacing: 1px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #0652DD;
-  .text{
-    font-family: 'Poppins', sans-serif;
+  a{
+    text-decoration: none;
+    z-index: 1;
+    padding: 0px;
+    border: none;
+    font-size: 14px;
     font-weight: 500;
-    padding: 0 20px 0 30px;
-    text-transform: uppercase;
-    color: white;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #0652DD;
+    &:hover{
+      background: #fff;
+      color: #0652DD;
+      text-decoration: none;
+    }
+    .text{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      padding: 0 20px 0 30px;
+      text-transform: uppercase;
+      color: white;
+      transition: all 0.5s ease;
+    }
+    .icon{
+      padding: 5px;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      border: 2px solid #fff;
+      svg {
+        width: 40px;
+        height: 40px;
+        padding: inherit;
+        font-size: 16px;
+        border-radius: 50%;
+        line-height: 46px;
+        text-align: center;
+        display: inline-block;
+        background: #fff;
+        transition: all 0.5s ease;
+      }
+    }
   }
+
+}
+.btn:hover .text {
+  color: #0652DD;
+}
+.btn:hover .icon{
+  border-color: #0652DD;
+}
+.btn:hover .icon svg {
+  color: white;
+  background: #0652DD;
 }
