@@ -15,9 +15,9 @@ const Projects = () => {
                     <Title title={'My projects'} subTitle={'projects'}/>
                     <div className="projects">
                         <div className="row justify-content-around">
-                            <Project style={socialNetwork} img={cre}/>
-                            <Project style={socialNetwork} img={todo}/>
-                            <Project style={socialNetwork} img={todo}/>
+                            <Project style={socialNetwork} img={cre} id={'1'}/>
+                            <Project style={socialNetwork} img={todo} id={'2'}/>
+                            <Project style={socialNetwork} img={todo} id={'3'}/>
                         </div>
                     </div>
                 </div>

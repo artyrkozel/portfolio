@@ -10,7 +10,7 @@ const Project = (props: any) => {
                 <div className={styles.portfolioImgBlock}>
                     <img src={props.img} alt="" className={styles.imgLol}/>
                     <div className={styles.btnProject}>
-                        <Btn title={"Смотреть"}/>
+                        <Btn title={"Смотреть"} id={props.id}/>
                     </div>
                 </div>
                 <div className={styles.portfolioBody}>

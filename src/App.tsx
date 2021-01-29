@@ -1,29 +1,22 @@
 import React from 'react';
-import styles from'./App.module.css';
+import styles from './App.module.css';
 import Header from "./header/Header";
-import Main from "./main/Main";
-import Skills from "./skills/Skills";
 import "bootstrap/dist/css/bootstrap.css"
-import Projects from "./projects/Projects";
-import Contacts from "./contacts/Contacts";
 
-
-
-
-
-
-
+import {Route} from 'react-router-dom'
+import New from "./new/New";
+import Components from "./components/components";
 
 function App() {
-  return (
-    <div className={styles.App}>
-                <Header />
-                <Main />
-                <Skills />
-                <Projects />
-                <Contacts />
-    </div>
-  );
+    return (
+        <div className={styles.appContent}>
+            <Header/>
+            <Route exact path={'/'} render={() => <Components/>}/>
+            <Route path={'/new'} render={() => <New/>}/>
+        </div>
+
+
+    );
 }
 
 export default App;
