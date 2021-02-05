@@ -9,6 +9,8 @@ import Battery50Icon from '@material-ui/icons/Battery50';
 import Battery60Icon from '@material-ui/icons/Battery60';
 import Battery90Icon from '@material-ui/icons/Battery90';
 import BatteryFullIcon from '@material-ui/icons/BatteryFull';
+
+
 const Skills = () => {
     return (
         <section className={`${styles.skillBlock} ${styles.section}`} id={"skills"}>
@@ -22,8 +24,8 @@ const Skills = () => {
                                icon={Battery30Icon}/>
                         <Skill number={'03'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-right"} icon={Battery50Icon}/>
                         <Skill number={'04'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-left"} icon={Battery60Icon}/>
-                        <Skill number={'04'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={Battery90Icon}/>
-                        <Skill number={'04'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={BatteryFullIcon}/>
+                        <Skill number={'05'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={Battery90Icon}/>
+                        <Skill number={'06'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={BatteryFullIcon}/>
                     </div>
                 </div>
         </section>

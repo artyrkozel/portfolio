@@ -12,14 +12,19 @@ const Projects = () => {
     return (
         <section className={`${styles.projectsBlock} ${styles.section}`} id={"projects"}>
                 <div className="container">
-                    <Title title={'My projects'} subTitle={'projects'}/>
-                    <div className="projects">
-                        <div className="row justify-content-around">
-                            <Project style={socialNetwork} img={cre} id={'1'}/>
-                            <Project style={socialNetwork} img={todo} id={'2'}/>
-                            <Project style={socialNetwork} img={todo} id={'3'}/>
+                    <div className="row justify-content-center">
+                        <Title title={'My projects'} subTitle={'projects'}/>
+                    </div>
+                    <div className="row">
+                        <div className="projects">
+                            <div className="row justify-content-around">
+                                <Project style={socialNetwork} img={cre} id={'0'} />
+                                <Project style={socialNetwork} img={todo} id={'1'} />
+                                <Project style={socialNetwork} img={todo} id={'2'}/>
+                            </div>
                         </div>
                     </div>
+
                 </div>
         </section>
 

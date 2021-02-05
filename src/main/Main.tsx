@@ -1,11 +1,13 @@
 import React from "react";
 import styles from './main.module.scss'
-import Button from "../common/btn/Button";
 import Particles from 'react-particles-js'
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
-import photo from './../common/img/original.jpg'
-import { Link, animateScroll as scroll } from "react-scroll";
+import photo from './../common/img/origineal.jpg'
+import {Link} from "react-scroll";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+
+
 const Main = () => {
     const params = {
         particles: {
@@ -20,27 +22,42 @@ const Main = () => {
     }
     return (
         <main className={styles.mainBlock} id={"main"}>
+            <div>
                 <Particles className={styles.particles} params={params}/>
-                <div className="container">
-                    <div className="row justify-content-between align-items-center">
-                        <div className="col-md-4">
+            </div>
+            <div className="container">
+                <div className={`${"row align-items-center justify-content-around"} ${styles.row}`}>
+                    <div className="col-lg-7 col-xl-6 col-md-10">
+                        <div className={styles.contentWr}>
                             <Fade direction="left">
                                 <span className={styles.subTitle}>Hi there</span>
-                                <h1 className={styles.title}>I am Artur</h1>
+                                <h1 className={styles.title}>My name is Artur Kozel</h1>
                                 <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
+                                <Link
+                                    activeClass="active"
+                                    className={`${styles.mainBtn} ${styles.btn4}`}
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={1000}
+                                >
+                                    Click me
+                                </Link>
                             </Fade>
                         </div>
-                        <Fade direction="right">
-                            <div className={`${'col-md-4'} ${styles.photo}`}>
-                                <span></span>
-                                <img src={photo} alt=""/>
-                            </div>
-                        </Fade>
                     </div>
-                    <div className="row">
-                        <Button title={"view works"}/>
+                    <div className="col-lg-5 col-xl-6 col-md-12">
+                        <div className={styles.heroImg}>
+                            <div className={styles.borderOuter}>
+                                <div className={styles.borderInner}>
+                                    <img src={photo} alt=""/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
         </main>
 
 

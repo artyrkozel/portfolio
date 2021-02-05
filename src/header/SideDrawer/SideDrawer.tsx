@@ -32,7 +32,7 @@ const SideDrawer = (props: any) => {
                     <ListItem button>
                         <Link
                             activeClass="active"
-                            to="main"
+                            to="/portfolio"
                             spy={true}
                             smooth={true}
                             offset={0}

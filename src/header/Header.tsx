@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import styles from './header.module.scss'
-import Nav from "../nav/Nav";
 import logo from './../common/img/logo.png'
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
