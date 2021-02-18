@@ -5,7 +5,6 @@ import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 import photo from './../common/img/origineal.jpg'
 import {Link} from "react-scroll";
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 
 const Main = () => {

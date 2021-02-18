@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './new.module.scss'
-import {useParams} from 'react-router-dom'
+import {NavLink, useParams} from 'react-router-dom'
 import bg from './../common/img/bg.jpg'
 import place from './../common/img/placholder.png'
 
@@ -22,6 +22,9 @@ export const New = (props: any) => {
                             <div>
                                 <h1>{data.title}</h1>
                             </div>
+                            <a className={styles.backBtn}>
+                                <NavLink to={'/portfolio/'}>back to home</NavLink>
+                            </a>
                         </div>
                     </div>
                 </div>

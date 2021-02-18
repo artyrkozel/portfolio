@@ -15,8 +15,8 @@ const Education = () => {
                         </Fade>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-10 offset-md-1">
+                <div className="row justify-content-center">
+                    <div className="col-md-10">
                         <div className={styles.educationContent}>
                             <div className={styles.timeLine}>
                                 <div className={styles.timeLineBlock}>
@@ -24,7 +24,7 @@ const Education = () => {
                                         <span className={styles.icon}></span>
                                     </div>
                                     <div className={styles.cdTimelineContent}>
-                                        <h2>BACHALOR DIGREE</h2>
+                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
                                         <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
                                         </p>
                                     </div>
@@ -34,7 +34,7 @@ const Education = () => {
                                         <span className={styles.icon}></span>
                                     </div>
                                     <div className={styles.cdTimelineContent}>
-                                        <h2>BACHALOR DIGREE</h2>
+                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
                                         <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
                                         </p>
                                     </div>
@@ -44,7 +44,7 @@ const Education = () => {
                                         <span className={styles.icon}></span>
                                     </div>
                                     <div className={styles.cdTimelineContent}>
-                                        <h2>BACHALOR DIGREE</h2>
+                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
                                         <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
                                         </p>
                                     </div>

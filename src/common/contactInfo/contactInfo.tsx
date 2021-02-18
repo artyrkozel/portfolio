@@ -6,7 +6,7 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 
 const ContactInfo = (props: any) => {
     return (
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
                 <div className={styles.contactInfo}>
                     <div className={styles.contactIcon}>
                         <span>{props.icon === 'phone' ? <PhoneAndroidIcon/> : <EmailIcon/>}</span>

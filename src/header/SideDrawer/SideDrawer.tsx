@@ -32,12 +32,22 @@ const SideDrawer = (props: any) => {
                     <ListItem button>
                         <Link
                             activeClass="active"
-                            to="/portfolio"
+                            to="main"
                             spy={true}
                             smooth={true}
                             offset={0}
                             duration={500}
                         >Home</Link>
+                    </ListItem>
+                    <ListItem button>
+                        <Link
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >About</Link>
                     </ListItem>
                     <ListItem button>
                         <Link
@@ -58,6 +68,16 @@ const SideDrawer = (props: any) => {
                             offset={0}
                             duration={1000}
                         >Projects</Link>
+                    </ListItem>
+                    <ListItem button>
+                        <Link
+                            activeClass="active"
+                            to="contacts"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                        >Contacts</Link>
                     </ListItem>
                 </List>
             </Drawer>

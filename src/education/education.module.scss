@@ -71,3 +71,45 @@
 
   }
 }
+@media screen and (max-width: 992px){
+  .education{
+    .educationContent{
+      .timeLine{
+        &:before{
+          left: 45px;
+        }
+        .timeLineBlock{
+          display: inline-flex;
+          &:last-child{
+            margin: 0;
+          }
+          &:nth-child(2n) .cdTimelineContent{
+            text-align: left;
+          }
+          .cdTimelineImg{
+            position: relative;
+            left: 45px;
+            margin-right: 60px;
+            height: 25px;
+          }
+          .cdTimelineContent{
+            width: 100%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 576px) {
+  .education{
+    .educationContent{
+      .cdTimelineContent{
+        .title{
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}

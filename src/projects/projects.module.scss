@@ -12,3 +12,13 @@
     font-weight: 700;
     line-height: 1.42;
 }
+@media screen and(max-width: 992px){
+  .projectsBlock{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 576px){
+  .section{
+    padding: 70px 30px;
+  }
+}

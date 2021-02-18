@@ -1,17 +1,18 @@
 import React from "react";
 import styles from './about.module.scss'
-
+import photo from './../common/img/main.jpeg'
 
 const About = () => {
     return (
-        <section className={`${styles.about} ${styles.section}`}>
+        <section className={`${styles.about} ${styles.section}`} id={"about"}>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className={styles.mainPhoto}>
+                <div className="row align-items-center">
+                    <div className="col-lg-6">
+                        <div className={styles.mainImg}>
+                            <img src={photo} alt=""/>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <div className={styles.aboutInner}>
                             <h6>about me</h6>
                             <h2>I am here with 10 years of user experience</h2>

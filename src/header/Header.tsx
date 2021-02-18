@@ -6,6 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import SideDrawer from "./SideDrawer/SideDrawer";
+import {NavLink} from "react-router-dom";
 
 
 const Header = (props: any) => {
@@ -20,32 +21,31 @@ const Header = (props: any) => {
         window.addEventListener("scroll", handleScroll);
     }, [headerShow]);
 
-    const handleScroll = () =>{
+    const handleScroll = () => {
         (window.scrollY > 0) ? setHeaderShow(true) : setHeaderShow(false);
     }
 
-    return (<div>
-                    <AppBar
-                        position="fixed"
-                        style={{
-                            background: headerShow ? "#fff" : "transparent",
-                            padding: " 10px 0px",
-                            boxShadow: headerShow ? "0 3px 10px 0 rgba(255, 69, 0, 0.1)" : "none"
-                        }}
-                    >
-                        <Toolbar>
-                            <div className={styles.header}>
-                                <div className={styles.headerLogo}>
-                                    <a href=""><img src={logo} alt="logo"/></a>
-
-                                </div>
-                                <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
-                                    <MenuIcon style={{color: '#0652DD'}}/>
-                                </IconButton>
-                            </div>
-                            <SideDrawer open={drawerOpen} onClose={(value: boolean) => toggleDrawer(value)} />
-                        </Toolbar>
-                    </AppBar>
+    return (<div className="container">
+            <AppBar
+                position="fixed"
+                style={{
+                    background: headerShow ? "#fff" : "transparent",
+                    padding: " 10px 0px",
+                    boxShadow: headerShow ? "0 3px 10px 0 rgba(255, 69, 0, 0.1)" : "none"
+                }}
+            >
+                <Toolbar>
+                    <div className={styles.header}>
+                        <div className={styles.headerLogo}>
+                            <NavLink to={'/portfolio/'}><img src={logo} alt="logo"/></NavLink>
+                        </div>
+                        <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
+                            <MenuIcon style={{color: '#0652DD'}}/>
+                        </IconButton>
+                    </div>
+                    <SideDrawer open={drawerOpen} onClose={(value: boolean) => toggleDrawer(value)}/>
+                </Toolbar>
+            </AppBar>
         </div>
 
     )
