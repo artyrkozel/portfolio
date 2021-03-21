@@ -13,7 +13,7 @@ const Header = (props: any) => {
     const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
     const [headerShow, setHeaderShow] = useState(false);
 
-    const toggleDrawer = (value: any) => {
+    const toggleDrawer = (value: boolean) => {
         setDrawerOpen(value);
     };
 
@@ -35,15 +35,18 @@ const Header = (props: any) => {
                 }}
             >
                 <Toolbar>
-                    <div className={styles.header}>
-                        <div className={styles.headerLogo}>
-                            <NavLink to={'/portfolio/'}><img src={logo} alt="logo"/></NavLink>
+                    <div className="container">
+                        <div className={styles.header}>
+                            <div className={styles.headerLogo}>
+                                <NavLink to={'/portfolio/'}><img src={logo} alt="logo"/></NavLink>
+                            </div>
+                            <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
+                                <MenuIcon style={{color: '#0652DD'}}/>
+                            </IconButton>
                         </div>
-                        <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
-                            <MenuIcon style={{color: '#0652DD'}}/>
-                        </IconButton>
+                        <SideDrawer open={drawerOpen} onClose={(value: boolean) => toggleDrawer(value)}/>
                     </div>
-                    <SideDrawer open={drawerOpen} onClose={(value: boolean) => toggleDrawer(value)}/>
+
                 </Toolbar>
             </AppBar>
         </div>

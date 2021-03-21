@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './contacts.module.scss'
 import Title from "../common/headingTitle/Title";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import EmailIcon from '@material-ui/icons/Email';
 import ContactInfo from "../common/contactInfo/contactInfo";
 
 const Contacts = (props: any) => {
@@ -42,10 +40,9 @@ const Contacts = (props: any) => {
                                 </div>
                             </div>
                             <div className="col-md-12 text-center">
-                                <div className={styles.btn}>
-                                    <button type={"submit"}>
-                                        <span className={styles.text}>Отправить</span>
-                                        <span className={styles.icon}><ArrowForwardIosIcon/></span>
+                                <div >
+                                    <button type={"submit"} className={`${styles.mainBtn} ${styles.btn4}`}>
+                                        Отправить
                                     </button>
                                 </div>
                             </div>

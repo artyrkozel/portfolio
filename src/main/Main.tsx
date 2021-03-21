@@ -28,7 +28,7 @@ const Main = () => {
                 <div className={`${"row align-items-center justify-content-around"} ${styles.row}`}>
                     <div className="col-lg-7 col-xl-6 col-md-10">
                         <div className={styles.contentWr}>
-                            <Fade direction="left">
+                            <Fade direction="up">
                                 <span className={styles.subTitle}>Hi there</span>
                                 <h1 className={styles.title}>My name is Artur Kozel</h1>
                                 <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
@@ -47,6 +47,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="col-lg-5 col-xl-6 col-md-12">
+                        <Fade direction="down" delay={500}>
                         <div className={styles.heroImg}>
                             <div className={styles.borderOuter}>
                                 <div className={styles.borderInner}>
@@ -54,6 +55,7 @@ const Main = () => {
                                 </div>
                             </div>
                         </div>
+                        </Fade>
                     </div>
                 </div>
             </div>

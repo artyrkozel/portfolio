@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./education.module.scss"
 import Title from "../common/headingTitle/Title";
 import {Fade} from "react-awesome-reveal";
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 const Education = () => {
     return (
@@ -10,7 +9,7 @@ const Education = () => {
             <div className="container">
                 <div className="row text-center justify-content-center">
                     <div className="col-md-10">
-                        <Fade direction="top-left">
+                        <Fade direction="down">
                             <Title title={'My Education'} subTitle={'Education'}/>
                         </Fade>
                     </div>
@@ -23,31 +22,36 @@ const Education = () => {
                                     <div className={styles.cdTimelineImg}>
                                         <span className={styles.icon}></span>
                                     </div>
-                                    <div className={styles.cdTimelineContent}>
-                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
-                                        <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
-                                        </p>
-                                    </div>
+                                    <Fade direction="down">
+                                        <div className={styles.cdTimelineContent}>
+                                            <h2 className={styles.title}>bntu</h2>
+                                            <p>2013-2018 | Инженер
+                                            </p>
+                                        </div>
+                                    </Fade>
                                 </div>
                                 <div className={styles.timeLineBlock}>
                                     <div className={styles.cdTimelineImg}>
                                         <span className={styles.icon}></span>
                                     </div>
-                                    <div className={styles.cdTimelineContent}>
-                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
-                                        <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
-                                        </p>
-                                    </div>
+                                        <div className={styles.cdTimelineContent}>
+                                            <Fade direction="up">
+                                            <h2 className={styles.title}>it-academy</h2>
+                                            <p>Разработка сайтов с использованием HTML5, CSS3, JS</p>
+                                            </Fade>
+                                        </div>
                                 </div>
                                 <div className={styles.timeLineBlock}>
                                     <div className={styles.cdTimelineImg}>
                                         <span className={styles.icon}></span>
                                     </div>
-                                    <div className={styles.cdTimelineContent}>
-                                        <h2 className={styles.title}>BACHALOR DIGREE</h2>
-                                        <p>JAN 2009 - MAY 2010 | DEFODIL UNIVERSITY
-                                        </p>
-                                    </div>
+                                    <Fade direction="down">
+                                        <div className={styles.cdTimelineContent}>
+                                            <h2 className={styles.title}>it-incubator</h2>
+                                            <p>Разработка SPA на стеке React, Redux, TS
+                                            </p>
+                                        </div>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>

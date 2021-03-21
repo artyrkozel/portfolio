@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from './skills.module.scss'
 import Skill from "./skill/Skill";
 import Title from "../common/headingTitle/Title";
@@ -12,17 +12,20 @@ import BatteryFullIcon from '@material-ui/icons/BatteryFull';
 
 
 const Skills = () => {
+    useEffect(()=> {
+        console.log("Rerender")
+    })
     return (
         <section className={`${styles.skillBlock} ${styles.section}`} id={"skills"}>
                 <div className="container">
-                    <Fade direction="top-left">
+                    <Fade direction="down">
                         <Title title={'My skills'} subTitle={'skills'}/>
                     </Fade>
                     <div className={styles.skills}>
-                        <Skill number={'01'} title={'Js'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-left"} icon={Battery20Icon}/>
-                        <Skill number={'02'} title={'HTML'} description={'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} direction={"top-right"}
+                        <Skill number={'01'} title={'HTML5/CSS3'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-left"} icon={Battery20Icon}/>
+                        <Skill number={'02'} title={'JavaScript'} description={'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} direction={"top-right"}
                                icon={Battery30Icon}/>
-                        <Skill number={'03'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-right"} icon={Battery50Icon}/>
+                        <Skill number={'03'} title={'React'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-right"} icon={Battery50Icon}/>
                         <Skill number={'04'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-left"} icon={Battery60Icon}/>
                         <Skill number={'05'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={Battery90Icon}/>
                         <Skill number={'06'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={BatteryFullIcon}/>
