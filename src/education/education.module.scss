@@ -1,10 +1,15 @@
+@import "../common/styles/variables";
+
 .section {
   padding: 100px 0;
 }
 
 .education {
   position: relative;
-  background-color: rgba(6, 82, 221, 0.05);
+  background-color: rgba(#201A23, 90);
+  h2{
+    color: #fff
+  }
   .educationContent{
     position: relative;
     .timeLine {
@@ -17,7 +22,7 @@
         left: 50%;
         height: 100%;
         width: 4px;
-        background: #0652DD;
+        background: $BackgroundMain;
         margin-left: -2px;
       }
       .timeLineBlock{
@@ -34,8 +39,8 @@
         }
         .cdTimelineImg{
           position: absolute;
-          background-color: #fff;
-          border: 2px solid #0652DD;
+          background-color: #201A23;
+          border: 2px solid $BackgroundMain;
           -webkit-box-shadow: none;
           box-shadow: none;
           height: 35px;
@@ -46,7 +51,7 @@
           transform: translate(-50%, 0);
           border-radius: 50%;
           .icon{
-            background-color: #0652DD;
+            background-color: $BackgroundMain;
             border-radius: 50%;
             display: block;
             height: 10px;
@@ -64,10 +69,11 @@
         position: relative;
         width: 45%;
         p{
-          color: #6D7077;
+          color: $Text;
         }
         .title{
-          font-family: "Poppins", sans-serif;
+          font-family: $MainFont;
+          color: #fff;
           text-transform: uppercase;
           font-size: 1.7em;
         }

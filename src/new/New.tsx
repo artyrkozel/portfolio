@@ -6,12 +6,12 @@ import social from './../common/img/social.png'
 
 const arr = [
     {title: 'SocialNet', details: {projectName: 'SocialNet', stack: 'React, Redux, Typescript', url: 'https://www.google.com/'}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '},
-    {title: 'TodoList',details: {projectName: 'dno', stack: 'React', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '},
-    {title: 'Вертска',details: {projectName: 'dno', stack: 'React', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '}
+    {title: 'TodoList',details: {projectName: 'TodoList', stack: 'React, Redux, Typescript', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '},
+    {title: 'HTML coding',details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '}
 ]
 
 export const New = (props: any) => {
-    console.log('render')
+
     const {id} = useParams<{ id: string }>()
     const data = arr[+id]
     return (
@@ -43,8 +43,8 @@ export const New = (props: any) => {
                             <div className={styles.projectDetails}>
                                 <ul>
                                     <li><h6>Project name</h6> <span>{data.details.projectName}</span></li>
-                                    <li><h6>Stack:</h6> <span>{data.details.stack }</span></li>
-                                    <li><h6>URL:</h6> <a href={data.details.url} target="_blank">Просмотреть</a></li>
+                                    <li><h6>Stack</h6> <span>{data.details.stack }</span></li>
+                                    <li><h6>URL</h6> <span><a href={data.details.url} target="_blank">Просмотреть</a></span></li>
                                 </ul>
                             </div>
                             <div className={styles.headerTitle}>

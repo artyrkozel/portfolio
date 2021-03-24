@@ -1,65 +1,31 @@
-.portfolioItem {
-    position: relative;
-    border-radius: 30px;
+@import '../../common/styles/variables';
+
+.wrContent {
+    height: 570px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 30px ;
+    padding-left: 30px ;
+    box-shadow: -19px 1px 34px -22px rgba(0,0,0,1);
     transition: .6s;
-    margin-bottom: 40px;
     cursor: pointer;
-    &:hover .imgLol{
-        transform: scale(1.1)
+    .content{
+        max-width: 330px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &:hover{
+        transform: translateY(-10px);
+    }
+    .title {
+        line-height: 90px;
+        font-size: 50px;
+        color: $TitleColorLight;
+        font-weight: 800;
+        font-family: $MainFont;
     }
 }
-.portfolioImgBlock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-}
-.imgLol {
-    border-radius: 30px;
-    width: 100%;
-    transition: .6s;
-}
-.portfolioBody {
-    margin-top: 10px;
-    padding: 0px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-//.btnProject {
-//    position: relative;
-//    a{
-//        text-decoration: none;
-//        color: #fff;
-//    }
-//    &:hover{
-//        .iconBorder{
-//            color: white;
-//        }
-//    }
-//}
-//
-//.iconBorder{
-//    position: absolute;
-//    transform: translate(-15px, -55px);
-//    bottom: 0;
-//    right: 65px;
-//    &:before{
-//        top: 0;
-//        content: "";
-//        position: absolute;
-//        border-radius: 50%;
-//        -webkit-transition: all 0.5s ease;
-//        transition: all 0.5s ease;
-//        -webkit-transform: translateY(-50%);
-//        border: 2px solid black;
-//        box-sizing: border-box;
-//        width: 80px;
-//        height: 80px;
-//        left: 14px;
-//    }
-//}
 
 @media screen and (max-width: 992px){
     .portfolioItem{

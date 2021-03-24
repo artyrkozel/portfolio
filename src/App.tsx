@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import {Route} from 'react-router-dom'
 import New from "./new/New";
 import Components from "./components/components";
+import { Footer } from './footer/Footer';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Header/>
             <Route exact path={'/portfolio'} render={() => <Components/>}/>
             <Route path={'/portfolio/new/:id?'} render={() => <New />}/>
+            <Footer />
         </div>
     );
 }

@@ -9,14 +9,14 @@ const About = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <Fade direction="left">
+                        <Fade direction="down" delay={500}>
                         <div className={styles.mainImg}>
                             <img src={photo} alt=""/>
                         </div>
                         </Fade>
                     </div>
                     <div className="col-lg-6">
-                        <Fade direction="right">
+                        <Fade direction="up" delay={500}>
                         <div className={styles.aboutInner}>
                                 <h6>about me</h6>
                                 <h2>Who am I</h2>

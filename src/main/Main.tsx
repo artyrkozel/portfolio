@@ -28,7 +28,7 @@ const Main = () => {
                 <div className={`${"row align-items-center justify-content-around"} ${styles.row}`}>
                     <div className="col-lg-7 col-xl-6 col-md-10">
                         <div className={styles.contentWr}>
-                            <Fade direction="up">
+                            <Fade direction="up" delay={500}>
                                 <span className={styles.subTitle}>Hi there</span>
                                 <h1 className={styles.title}>My name is Artur Kozel</h1>
                                 <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>

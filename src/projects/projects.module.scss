@@ -1,16 +1,17 @@
+@import "src/common/styles/variables";
+
 .section {
   padding: 100px 0;
-}
-.projectsBlock {
-    background-color: rgba(6, 82, 221, 0.05);
+  height: 100ch;
 }
 .title h2{
  text-align: center;
     padding-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $MainFont;
     font-weight: 700;
     line-height: 1.42;
 }
+
 @media screen and(max-width: 992px){
   .projectsBlock{
     height: 100%;

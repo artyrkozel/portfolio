@@ -1,3 +1,5 @@
+@import "src/common/styles/variables";
+
 .contactInfo{
   display: flex;
   align-items: center;
@@ -10,18 +12,17 @@
 }
 .contactIcon{
   display: inline-block;
-  border: 2px solid;
+  border: 2px solid $BackgroundMain;
   border-radius: 50%;
   padding: 10px;
-  border-color: #0652DD;
   margin-right: 20px;
   svg{
     height: 80px;
     width: 80px;
-    color: #fff;
+    color: $BackgroundLight;
     -ms-flex-align: center;
     align-items: center;
-    background: #0652DD;
+    background: $BackgroundMain;
     border-radius: 50%;
     padding: 15px;
   }
@@ -29,7 +30,7 @@
 }
 
 .contactBody{
-  font-family: 'Poppins', sans-serif;
+  font-family: $MainFont;
   font-weight: 300;
   line-height: 1.5;
   h5{

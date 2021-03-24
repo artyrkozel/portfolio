@@ -1,21 +1,23 @@
+@import "./src/common/styles/variables";
+
 .sectionHeading {
-  color: #171718;
+  color: $TitleColorBlack;
   text-align: center;
   margin-bottom: 50px;
   span {
-    font-family: 'Poppins', sans-serif;
+    font-family: $MainFont;
     font-weight: 500;
     font-size: 14px;
     border-radius: 50px;
-    color: #fff;
-    background: #0652DD;
+    color: $TitleColorLight;
+    background: $BackgroundMain;
     padding: 8px 18px;
     margin-bottom: 10px;
     display: inline-block;
   }
   h2 {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: $MainFont;
     font-weight: 700;
     padding-bottom: 15px;
     &::after{
@@ -25,7 +27,7 @@
       height: 4px;
       width: 50px;
       position: absolute;
-      background: #0652DD;
+      background: $BackgroundMain;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
     }

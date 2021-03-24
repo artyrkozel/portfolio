@@ -41,7 +41,7 @@ const Header = (props: any) => {
                                 <NavLink to={'/portfolio/'}><img src={logo} alt="logo"/></NavLink>
                             </div>
                             <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
-                                <MenuIcon style={{color: '#0652DD'}}/>
+                                <MenuIcon style={{color: '#5d42d3'}}/>
                             </IconButton>
                         </div>
                         <SideDrawer open={drawerOpen} onClose={(value: boolean) => toggleDrawer(value)}/>

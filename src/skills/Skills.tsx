@@ -1,36 +1,47 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from './skills.module.scss'
 import Skill from "./skill/Skill";
 import Title from "../common/headingTitle/Title";
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import Battery20Icon from '@material-ui/icons/Battery20';
-import Battery30Icon from '@material-ui/icons/Battery30';
 import Battery50Icon from '@material-ui/icons/Battery50';
-import Battery60Icon from '@material-ui/icons/Battery60';
-import Battery90Icon from '@material-ui/icons/Battery90';
 import BatteryFullIcon from '@material-ui/icons/BatteryFull';
+import {ProgressLine} from "../common/ProgressBarLine/ProgressBarLine";
 
 
 const Skills = () => {
-    useEffect(()=> {
-        console.log("Rerender")
-    })
     return (
         <section className={`${styles.skillBlock} ${styles.section}`} id={"skills"}>
-                <div className="container">
-                    <Fade direction="down">
-                        <Title title={'My skills'} subTitle={'skills'}/>
-                    </Fade>
+            <div className="container">
+                <Fade direction="down">
+                    <Title title={'My skills'} subTitle={'skills'}/>
+                </Fade>
+                <Fade direction="up">
                     <div className={styles.skills}>
-                        <Skill number={'01'} title={'HTML5/CSS3'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-left"} icon={Battery20Icon}/>
-                        <Skill number={'02'} title={'JavaScript'} description={'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} direction={"top-right"}
-                               icon={Battery30Icon}/>
-                        <Skill number={'03'} title={'React'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"top-right"} icon={Battery50Icon}/>
-                        <Skill number={'04'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-left"} icon={Battery60Icon}/>
-                        <Skill number={'05'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={Battery90Icon}/>
-                        <Skill number={'06'} title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} direction={"bottom-right"} icon={BatteryFullIcon}/>
+                        <Skill number={'01'} title={'HTML5/CSS3'} direction={"top-left"} icon={Battery20Icon}/>
+                        <Skill number={'02'} title={'JavaScript'} direction={"top-right"}
+                               icon={Battery50Icon}/>
+                        <Skill number={'03'} title={'React/TypeScript'} direction={"top-right"} icon={BatteryFullIcon}/>
                     </div>
-                </div>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <ProgressLine title={'BootStrap'} percent={90}/>
+                            <ProgressLine title={'Saas/Less'} percent={80}/>
+                            <ProgressLine title={'Responsive web'} percent={80}/>
+                        </div>
+                        <div className="col-md-3 offset-1">
+                            <ProgressLine title={'Rest API(Axios)'} percent={80}/>
+                            <ProgressLine title={'ECMAScript 6+'} percent={70}/>
+                        </div>
+                        <div className="col-md-3 offset-1">
+                            <ProgressLine title={'React-router'} percent={90}/>
+                            <ProgressLine title={'Hooks'} percent={75}/>
+                            <ProgressLine title={'Functional and Class components'} percent={75}/>
+                            <ProgressLine title={'Redux, Redux-thunk'} percent={85}/>
+                        </div>
+                    </div>
+                </Fade>
+            </div>
         </section>
 
     )

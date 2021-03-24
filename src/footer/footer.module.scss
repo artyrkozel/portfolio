@@ -1,0 +1,9 @@
+@import "src/common/styles/variables";
+
+.footer {
+  background-color: #201A23;
+  padding: 50px 0;
+  p {
+    color: $TitleColorLight
+  }
+}

@@ -1,38 +1,41 @@
+@import "src/common/styles/variables";
+
 .skillItem {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: $MainFont;
     text-align: center;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $BackgroundLight;
     margin-bottom: 80px;
     border-radius: 50px;
-    -webkit-transition: all 0.5s ease;
-    transition: .6s;
     padding: 30px 15px 25px 15px;
     -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
     box-shadow: rgba(6, 82, 221, 0.15) 0px 15px 30px 0px;
     cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     &:hover {
-        transition: .6s;
-        background: linear-gradient(130deg, #503bff 0%, #8293ff 100%);;
+        background: linear-gradient(130deg, $BackgroundMain 0%, #8293ff 100%);;
         .body {
             background-color: transparent;
-            color: white;
-            transition: .6s;
+            color: $TitleColorLight;
             h4{
-                color: white;
+                color: $TitleColorLight;
             }
             span{
-                color: #fff;
+                color: $TitleColorLight;
             }
         }
         .iconNext{
-            background-color: #000;
+            background-color: $BackgroundDark;
             span{
-                background-color: #000;
+                background-color: $BackgroundDark;
             }
         }
         .iconBorder:before, .iconBorder:after{
-            border-color: #000;
+            border-color: $BackgroundDark;
         }
 
     }
@@ -58,21 +61,22 @@
         align-items: center;
         text-align: center;
         border-radius: 50px;
+        transition: .6s;
         h4 {
             font-size: 50px;
-            color: #0652DD;
-            font-family: "Poppins", sans-serif;
+            color: $BackgroundMain;
+            font-family: $MainFont;
             font-weight: 700;
         }
         h5{
-            font-family: "Poppins", sans-serif;
+            font-family: $MainFont;
             margin: 0 0 10px 0;
             font-size: 1.467rem;
             font-weight: bold;
         }
         .description{
             margin-bottom: 30px;
-            color: #6D7077;
+            color: $Text;
             font-weight: 200;
             transition: .6s;
         }
@@ -95,8 +99,8 @@
     font-size: 20px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background: rgb(6, 82, 221);
+    color: $BtnColorLight;
+    background: $BackgroundMain;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -107,8 +111,8 @@
     position: relative;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background: rgb(6, 82, 221);
+    color: $BtnColorLight;
+    background: $BackgroundMain;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -130,7 +134,7 @@
     transition: all 0.5s ease;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 2px solid rgb(6, 82, 221);
+    border: 2px solid $BackgroundMain;
     box-sizing: border-box;
     right: -20px;
     width: 100px;
@@ -147,7 +151,7 @@
     transition: all 0.5s ease;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 2px solid rgb(6, 82, 221);
+    border: 2px solid $BackgroundMain;
     right: -10px;
     width: 80px;
     height: 80px;
