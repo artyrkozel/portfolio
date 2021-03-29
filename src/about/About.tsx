@@ -19,7 +19,7 @@ const About = () => {
                         <Fade direction="up" delay={500}>
                         <div className={styles.aboutInner}>
                                 <h6>about me</h6>
-                                <h2>Who am I</h2>
+                                <h2>About me</h2>
                             <p>
                                 Responsible and motivated Front-end developer, with experience in creating Landing page and SPA using React, Redux, Typescript. I have good analytical skills. I learn easily and with pleasure. I quickly find a common language with people.
                             </p>

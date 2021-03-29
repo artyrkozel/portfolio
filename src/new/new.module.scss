@@ -1,10 +1,12 @@
 @import "src/common/styles/variables";
 
 .project {
+  height: 72vh;
   .portfolioImg{
     width: 80%;
     height: 85%;
-    border-radius: 30px
+    border-radius: 30px;
+    box-shadow: -19px 1px 34px -22px black;
   }
 }
 .backBtn{
@@ -41,7 +43,7 @@
     height: 100%;
     opacity: 0.8;
     position: absolute;
-    background: #171718;
+    background: #201A23;
   }
   h1,{
     font-weight: 700;

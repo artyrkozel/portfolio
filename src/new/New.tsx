@@ -2,15 +2,16 @@ import React from "react";
 import styles from './new.module.scss'
 import {NavLink, useParams} from 'react-router-dom'
 import bg from './../common/img/bg.jpg'
-import social from './../common/img/social.png'
-
+import demo1 from './../common/img/demo.png'
+import demo2 from './../common/img/demo2.png'
+import demo3 from './../common/img/demo3.png'
 const arr = [
-    {title: 'SocialNet', details: {projectName: 'SocialNet', stack: 'React, Redux, Typescript', url: 'https://www.google.com/'}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '},
-    {title: 'TodoList',details: {projectName: 'TodoList', stack: 'React, Redux, Typescript', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '},
-    {title: 'HTML coding',details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: ''}, description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like '}
+    {title: 'TodoList',img: demo3, details: {projectName: 'TodoList', stack: 'React, Redux, Typescript', url: 'https://artyrkozel.github.io/todolist/#/todolist/'}, description: 'Создание разных Todo-листов, добавление/удаление/редактирование тасок, использование Material Ui, логинизация (redux form), использование RestApi' },
+    {title: 'SocialNet',img: demo2, details: {projectName: 'SocialNet', stack: 'React, Redux, Typescript', url: 'https://artyrkozel.github.io/socialnet/#/socialnet/login'}, description: 'Реализация FLUX-круговорота, создание логинизации с использованием Formik(с валидацией), навигация по странице (react router dom), возможность редактирования профиля, добавление/изменение статуса, подписка на пользователей, отображение списка криптовалют с возможностью фильтрации, общий чат (websocket), дизайн Material-Ui, использование RestApi'},
+    {title: 'HTML coding',img: demo1, details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: 'https://artyrkozel.github.io/artyrkozel-artyrkozel-artyrkozel-version.github.io/'}, description: 'Адаптивная вертска'}
 ]
 
-export const New = (props: any) => {
+export const New = () => {
 
     const {id} = useParams<{ id: string }>()
     const data = arr[+id]
@@ -34,7 +35,7 @@ export const New = (props: any) => {
                 <div className='container'>
                     <div className="row justify-content-between">
                         <div className="col-md-8">
-                            <img className={styles.portfolioImg} src={social} alt=""/>
+                            <img className={styles.portfolioImg} src={data.img} alt=""/>
                         </div>
                         <div className="col-lg-4">
                             <div className={styles.headerTitle}>
@@ -60,7 +61,6 @@ export const New = (props: any) => {
                 </div>
             </section>
         </main>
-
     )
 }
 
