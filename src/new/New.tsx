@@ -45,7 +45,7 @@ export const New = () => {
                                 <ul>
                                     <li><h6>Project name</h6> <span>{data.details.projectName}</span></li>
                                     <li><h6>Stack</h6> <span>{data.details.stack }</span></li>
-                                    <li><h6>URL</h6> <span><a href={data.details.url} target="_blank">Просмотреть</a></span></li>
+                                    <li><h6>URL</h6> <span><a href={data.details.url} target="_blank" rel="noreferrer">Просмотреть</a></span></li>
                                 </ul>
                             </div>
                             <div className={styles.headerTitle}>

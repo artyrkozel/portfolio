@@ -6,7 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import SideDrawer from "./SideDrawer/SideDrawer";
-import {NavLink} from "react-router-dom";
+import {Link} from "react-scroll";
 
 
 const Header = (props: any) => {
@@ -38,7 +38,14 @@ const Header = (props: any) => {
                     <div className="container">
                         <div className={styles.header}>
                             <div className={styles.headerLogo}>
-                                <NavLink to={'/portfolio/'}><img src={logo} alt="logo"/></NavLink>
+                                <Link
+                                    activeClass="active"
+                                    to="main"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                ><img src={logo} alt="logo"/></Link>
                             </div>
                             <IconButton aria-label="Menu" onClick={() => toggleDrawer(true)}>
                                 <MenuIcon style={{color: '#5d42d3'}}/>

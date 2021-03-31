@@ -18,7 +18,7 @@ const Skill = React.memo((props: any) => {
                     <span><SvgIcon component={props.icon}/></span>
                 </div>
                 <div className={styles.iconBorder}></div>
-                <ProgressCircular progress={70} radius={70}/>
+                <ProgressCircular progress={props.value} radius={70}/>
             </div>
         </div>
 

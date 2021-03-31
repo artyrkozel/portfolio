@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './App.module.scss';
 import Header from "./header/Header";
 import "bootstrap/dist/css/bootstrap.css"
-
 import {Route} from 'react-router-dom'
 import New from "./new/New";
 import Components from "./components/components";

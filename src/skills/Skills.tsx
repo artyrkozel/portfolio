@@ -18,10 +18,10 @@ const Skills = () => {
                 </Fade>
                 <Fade direction="up">
                     <div className={styles.skills}>
-                        <Skill number={'01'} title={'HTML5/CSS3'} direction={"top-left"} icon={Battery20Icon}/>
+                        <Skill number={'01'} title={'HTML5/CSS3'} direction={"top-left"} icon={Battery20Icon} value={85}/>
                         <Skill number={'02'} title={'JavaScript'} direction={"top-right"}
-                               icon={Battery50Icon}/>
-                        <Skill number={'03'} title={'React/TypeScript'} direction={"top-right"} icon={BatteryFullIcon}/>
+                               icon={Battery50Icon} value={70}/>
+                        <Skill number={'03'} title={'React/TypeScript'} direction={"top-right"} icon={BatteryFullIcon} value={80}/>
                     </div>
                     <div className="row">
                         <div className="col-md-3">

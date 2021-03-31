@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './about.module.scss'
-import photo from './../common/img/main.jpeg'
+import photo2 from './../common/img/main.jpg'
 import {Fade} from "react-awesome-reveal";
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
                     <div className="col-lg-6">
                         <Fade direction="down" delay={500}>
                         <div className={styles.mainImg}>
-                            <img src={photo} alt=""/>
+                            <img src={photo2} alt=""/>
                         </div>
                         </Fade>
                     </div>

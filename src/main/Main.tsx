@@ -6,7 +6,6 @@ import ReactTypingEffect from 'react-typing-effect';
 import photo from './../common/img/origineal.jpg'
 import {Link} from "react-scroll";
 
-
 const Main = () => {
     const params = {
         particles: {
@@ -32,17 +31,26 @@ const Main = () => {
                                 <span className={styles.subTitle}>Hi there</span>
                                 <h1 className={styles.title}>My name is Artur Kozel</h1>
                                 <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
-                                <Link
-                                    activeClass="active"
-                                    className={`${styles.mainBtn} ${styles.btn4}`}
-                                    to="projects"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={1000}
-                                >
-                                    Click me
-                                </Link>
+                                    <div className="row">
+                                        <div className="col-md-4">
+                                            <Link
+                                                activeClass="active"
+                                                className={`${styles.mainBtn} ${styles.btn4}`}
+                                                to="projects"
+                                                spy={true}
+                                                smooth={true}
+                                                offset={0}
+                                                duration={1000}
+                                            >
+                                                My Works
+                                            </Link>
+                                        </div>
+                                        <div className="col-md-5">
+                                            <a className={`${styles.mainBtn} ${styles.btn4}`} href={'https://cloud.mail.ru/home/CV.pdf'} target="_blank" rel="noreferrer">
+                                                Download CV
+                                            </a>
+                                        </div>
+                                    </div>
                             </Fade>
                         </div>
                     </div>
