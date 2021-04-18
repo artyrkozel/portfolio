@@ -5,14 +5,15 @@ import bg from './../common/img/bg.jpg'
 import demo1 from './../common/img/demo.png'
 import demo2 from './../common/img/demo2.png'
 import demo3 from './../common/img/demo3.png'
+import demo4 from './../common/img/demo4.png'
 const arr = [
-    {title: 'TodoList',img: demo3, details: {projectName: 'TodoList', stack: 'React, Redux, Typescript', url: 'https://artyrkozel.github.io/todolist/#/todolist/'}, description: 'Создание разных Todo-листов, добавление/удаление/редактирование тасок, использование Material Ui, логинизация (redux form), использование RestApi' },
-    {title: 'SocialNet',img: demo2, details: {projectName: 'SocialNet', stack: 'React, Redux, Typescript', url: 'https://artyrkozel.github.io/socialnet/#/socialnet/login'}, description: 'Реализация FLUX-круговорота, создание логинизации с использованием Formik(с валидацией), навигация по странице (react router dom), возможность редактирования профиля, добавление/изменение статуса, подписка на пользователей, отображение списка криптовалют с возможностью фильтрации, общий чат (websocket), дизайн Material-Ui, использование RestApi'},
+    {title: 'TodoList',img: demo3, details: {projectName: 'TodoList', stack: 'React, Redux,Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/todolist/#/todolist/'}, description: 'Создание разных Todo-листов, добавление/удаление/редактирование тасок, использование Material Ui, логинизация (redux form), использование RestApi' },
+    {title: 'SocialNet',img: demo2, details: {projectName: 'SocialNet', stack: 'React, Redux,Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/socialnet/#/socialnet/login'}, description: 'Реализация FLUX-круговорота, создание логинизации с использованием Formik(с валидацией), навигация по странице (react router dom), возможность редактирования профиля, добавление/изменение статуса, подписка на пользователей, отображение списка криптовалют с возможностью фильтрации, общий чат (websocket), дизайн Material-Ui, использование RestApi'},
+    {title: 'Movie search',img: demo4, details: {projectName: 'Movie search', stack: 'React, Redux, Redux-saga, Typescript', url: 'https://artyrkozel.github.io/movie-app/#/movie-app/main'}, description: 'Навигация по странице (react router dom), поиск фильмов по запросу, фильтрация по жанру, заголовку, рейтингу. Возможность добавление фильма в WatchList'},
     {title: 'HTML coding',img: demo1, details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: 'https://artyrkozel.github.io/artyrkozel-artyrkozel-artyrkozel-version.github.io/'}, description: 'Адаптивная вертска'}
 ]
 
 export const New = () => {
-
     const {id} = useParams<{ id: string }>()
     const data = arr[+id]
     return (
@@ -25,7 +26,7 @@ export const New = () => {
                                 <h1>{data.title}</h1>
                             </div>
                             <a className={styles.backBtn}>
-                                <NavLink to={'/portfolio/'}>back to home</NavLink>
+                                <NavLink to={'/'}>back to home</NavLink>
                             </a>
                         </div>
                     </div>
@@ -34,8 +35,8 @@ export const New = () => {
             <section className={`${styles.project} ${styles.cont}`}>
                 <div className='container'>
                     <div className="row justify-content-between">
-                        <div className="col-md-8">
-                            <img className={styles.portfolioImg} src={data.img} alt=""/>
+                        <div className="col-lg-8 col-md-12 ml-auto">
+                            <img className={styles.portfolioImg} src={data.img} alt="img"/>
                         </div>
                         <div className="col-lg-4">
                             <div className={styles.headerTitle}>
@@ -45,7 +46,7 @@ export const New = () => {
                                 <ul>
                                     <li><h6>Project name</h6> <span>{data.details.projectName}</span></li>
                                     <li><h6>Stack</h6> <span>{data.details.stack }</span></li>
-                                    <li><h6>URL</h6> <span><a href={data.details.url} target="_blank" rel="noreferrer">Просмотреть</a></span></li>
+                                    <li><h6>URL</h6> <span><a href={data.details.url} target="_blank" rel="noreferrer">View</a></span></li>
                                 </ul>
                             </div>
                             <div className={styles.headerTitle}>

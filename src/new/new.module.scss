@@ -127,3 +127,23 @@
 
   }
 }
+
+@media screen and (max-width: 1200px){
+  .project{
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+.project{
+  height: 100%;
+}
+  .cont{
+    padding: 76px 0 20px 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .cont{
+    padding-t: 60px 0 20px 0;
+  }
+}

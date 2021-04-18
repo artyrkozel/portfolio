@@ -2,8 +2,9 @@ import React from 'react';
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import {Link} from "react-scroll";
+import { NavLink } from "react-router-dom";
 import {createStyles, makeStyles, Theme} from "@material-ui/core";
+import {Link} from "react-scroll";
 const SideDrawer = (props: any) => {
     const drawerWidth = 240
     const useStyles = makeStyles((theme: Theme) =>
@@ -30,14 +31,14 @@ const SideDrawer = (props: any) => {
             >
                 <List component="nav" className={classes.nav}>
                     <ListItem button>
-                        <Link
-                            activeClass="active"
-                            to="main"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}
-                        >Home</Link>
+                            <Link
+                                activeClass="active"
+                                to="main"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                            >Home</Link>
                     </ListItem>
                     <ListItem button>
                         <Link

@@ -8,14 +8,14 @@ import Education from "../education/Education";
 
 const Components = () => {
     return (
-        <div>
+        <>
             <Main />
             <About />
             <Education />
             <Skills />
             <Projects />
             <Contacts />
-        </div>
+        </>
     )
 }
 export default Components

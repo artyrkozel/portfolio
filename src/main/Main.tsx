@@ -31,7 +31,8 @@ const Main = () => {
                                 <span className={styles.subTitle}>Hi there</span>
                                 <h1 className={styles.title}>My name is Artur Kozel</h1>
                                 <ReactTypingEffect text="Frontend developer" className={styles.subTitle}/>
-                                    <div className="row">
+                                <div className="row">
+                                    <div className={styles.mainBtnWr}>
                                         <div className="col-md-4">
                                             <Link
                                                 activeClass="active"
@@ -45,24 +46,20 @@ const Main = () => {
                                                 My Works
                                             </Link>
                                         </div>
-                                        <div className="col-md-5">
-                                            <a className={`${styles.mainBtn} ${styles.btn4}`} href={'https://cloud.mail.ru/home/CV.pdf'} target="_blank" rel="noreferrer">
-                                                Download CV
-                                            </a>
-                                        </div>
                                     </div>
+                                </div>
                             </Fade>
                         </div>
                     </div>
                     <div className="col-lg-5 col-xl-6 col-md-12">
                         <Fade direction="down" delay={500}>
-                        <div className={styles.heroImg}>
-                            <div className={styles.borderOuter}>
-                                <div className={styles.borderInner}>
-                                    <img src={photo} alt=""/>
+                            <div className={styles.heroImg}>
+                                <div className={styles.borderOuter}>
+                                    <div className={styles.borderInner}>
+                                        <img src={photo} alt="photo"/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </Fade>
                     </div>
                 </div>

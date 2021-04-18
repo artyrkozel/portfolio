@@ -1,7 +1,7 @@
 @import '../../common/styles/variables';
 
 .wrContent {
-    height: 570px;
+    height: 330px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,7 @@
     box-shadow: -19px 1px 34px -22px rgba(0,0,0,1);
     transition: .6s;
     cursor: pointer;
+    background-color: #5d42d3;
     .content{
         max-width: 330px;
         margin-right: auto;
@@ -19,7 +20,7 @@
         transform: translateY(-10px);
     }
     .title {
-        line-height: 90px;
+        line-height: 60px;
         font-size: 50px;
         color: $TitleColorLight;
         font-weight: 800;
@@ -28,11 +29,20 @@
 }
 
 @media screen and (max-width: 992px){
+    .wrContent{
+        margin-bottom: 10px;
+        height: 260px;
+    }
     .portfolioItem{
         .portfolioImgBlock{
             .imgLol{
                 max-width: 100%;
             }
         }
+    }
+}
+@media screen and (max-width: 992px){
+    .wrContent{
+        height: 300px;
     }
 }

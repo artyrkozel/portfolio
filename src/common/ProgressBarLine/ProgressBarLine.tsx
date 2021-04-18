@@ -1,7 +1,12 @@
 import React from "react";
 import { Line} from 'rc-progress';
 
-export const ProgressLine = (props: any) => {
+type ProgressLineType = {
+    title: string
+    percent: number
+}
+
+export const ProgressLine = (props: ProgressLineType) => {
     return(
         <div style={{marginBottom: '15px'}}>
             <div>

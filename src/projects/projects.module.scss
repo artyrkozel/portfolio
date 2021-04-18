@@ -1,8 +1,20 @@
 @import "src/common/styles/variables";
 
+*a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .section {
   padding: 100px 0;
-  height: 100ch;
+  a {
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 .title h2{
  text-align: center;
@@ -19,6 +31,6 @@
 }
 @media screen and (max-width: 576px){
   .section{
-    padding: 70px 30px;
+    padding: 20px 30px;
   }
 }

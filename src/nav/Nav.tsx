@@ -1,33 +1,33 @@
 import React from "react";
 import styles from './nav.module.scss'
-import {Link} from "react-scroll";
 
+import { HashLink as Link} from 'react-router-hash-link';
 const Nav = () => {
     return (
         <div className={styles.nav}>
             <Link
-                activeClass={styles.active}
+
                 to="#main"
-                spy={true}
+
                 smooth={true}
-                offset={0}
-                duration={500}
+
+
             >Home</Link>
             <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
+
+                to="#skills"
+
                 smooth={true}
-                offset={0}
-                duration={500}
+
+
             >Skills</Link>
             <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
+
+                to="#projects"
+
                 smooth={true}
-                offset={0}
-                duration={1000}
+
+
             >Projects</Link>
         </div>
     )

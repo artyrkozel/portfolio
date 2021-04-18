@@ -9,14 +9,11 @@ const About = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <Fade direction="down" delay={500}>
                         <div className={styles.mainImg}>
                             <img src={photo2} alt=""/>
                         </div>
-                        </Fade>
                     </div>
                     <div className="col-lg-6">
-                        <Fade direction="up" delay={500}>
                         <div className={styles.aboutInner}>
                                 <h6>about me</h6>
                                 <h2>About me</h2>
@@ -24,7 +21,7 @@ const About = () => {
                                 Responsible and motivated Front-end developer, with experience in creating Landing page and SPA using React, Redux, Typescript. I have good analytical skills. I learn easily and with pleasure. I quickly find a common language with people.
                             </p>
                             <div className="row">
-                                <div className="col-md-6 col-sm-6">
+                                <div className="col-md-6 col-sm-5">
                                     <ul className={styles.aboutInfo}>
                                         <li>
                                             <h5>Name :</h5>
@@ -40,7 +37,7 @@ const About = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-md-6 col-sm-6">
+                                <div className="col-md-6 col-sm-5">
                                     <ul className={styles.aboutInfo}>
                                         <li>
                                             <h5>Education  :</h5>
@@ -57,9 +54,7 @@ const About = () => {
                                     </ul>
                                 </div>
                         </div>
-
                         </div>
-                        </Fade>
                     </div>
                 </div>
             </div>
