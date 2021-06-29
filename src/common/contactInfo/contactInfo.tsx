@@ -1,7 +1,10 @@
 import React from "react";
 import styles from './contactInfo.module.scss'
-import EmailIcon from "@material-ui/icons/Email";
+import TelegramIcon from '@material-ui/icons/Telegram';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import EmailIcon from "@material-ui/icons/Email";
+
+
 
 
 const ContactInfo = (props: any) => {
@@ -9,7 +12,9 @@ const ContactInfo = (props: any) => {
             <div className="col-md-6 col-sm-12">
                 <div className={styles.contactInfo}>
                     <div className={styles.contactIcon}>
-                        <span>{props.icon === 'phone' ? <PhoneAndroidIcon/> : <EmailIcon/>}</span>
+                        {props.icon === 'telegram' && <span><TelegramIcon/></span>}
+                        {props.icon === 'email' && <span><EmailIcon/></span>}
+                        {props.icon === 'phone' && <span><PhoneAndroidIcon/></span>}
                     </div>
                     <div className={styles.contactBody}>
                         <h5>{props.title}</h5>

@@ -5,7 +5,28 @@ import Title from "../common/headingTitle/Title";
 import first from './../common/img/01.png'
 import second from './../common/img/02.png'
 import third from './../common/img/03.png'
+import demo3 from "../common/img/demo3.png";
+import demo2 from "../common/img/demo2.png";
+import demo4 from "../common/img/demo4.png";
+import demo1 from "../common/img/demo.png";
+type detailsType = {
+    projectName: string
+    stack: string
+    url: string
+}
+export type dataType = {
+    title: string
+    img: string
+    details: detailsType
+    description: string
+}
 
+const data = [
+    {title: 'TodoList',img: demo3, details: {projectName: 'TodoList', stack: 'React, Redux, Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/todolist/#/todolist/'}, description: 'Creation of different todo-sheets, adding / deleting / editing tasks, using Material Ui, login (redux form), using RestApi, redux-toolkit' },
+    {title: 'SocialNet',img: demo2, details: {projectName: 'SocialNet', stack: 'React, Redux, Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/socialnet/#/socialnet/login'}, description: 'Implementation of the FLUX cycle, creating a login using Formik (with validation), page navigation (react router dom), the ability to edit a profile, add / change a status, subscribe to users, display a list of cryptocurrencies with the ability to filter, general chat (websocket), Material-Ui design, using RestApi'},
+    {title: 'Movie search',img: demo4, details: {projectName: 'Movie search', stack: 'React, Redux, Redux-saga, Typescript', url: 'https://artyrkozel.github.io/movie-search/#/movie-search/main'}, description: 'Page navigation (react router dom), search for movies on demand, filtering by genre, title, rating. Possibility to add a movie to WatchList. Using scss preprocessor'},
+    {title: 'HTML coding',img: demo1, details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: 'https://artyrkozel.github.io/artyrkozel-artyrkozel-artyrkozel-version.github.io/'}, description: 'Responsive coding, using FlexBox, Grid'}
+]
 
 const Projects = () => {
     return (
@@ -19,15 +40,13 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <Project bg={first} id={'0'} title={'TodoList'}/>
-                    <Project bg={second} id={'1'} title={'SocialNet'}/>
-                    <Project bg={third} id={'2'} title={'Movie search'}/>
-                    <Project bg={third} id={'3'} title={'HTML coding'}/>
+                    <Project bg={first} id={'0'} title={'TodoList'} item={data[0]} photo={demo3}/>
+                    <Project bg={second} id={'1'} title={'SocialNet'} item={data[1]} photo={demo2}/>
+                    <Project bg={third} id={'2'} title={'Movie search'} item={data[2]} photo={demo4}/>
+                    <Project bg={third} id={'3'} title={'HTML coding'} item={data[3]} photo={demo1}/>
                 </div>
             </div>
         </section>
-
-
     )
 }
 

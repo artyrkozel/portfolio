@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './about.module.scss'
 import photo2 from './../common/img/main.jpg'
-import {Fade} from "react-awesome-reveal";
 
 const About = () => {
     return (
@@ -15,10 +14,12 @@ const About = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className={styles.aboutInner}>
-                                <h6>about me</h6>
-                                <h2>About me</h2>
+                            <h6>about me</h6>
+                            <h2>About me</h2>
                             <p>
-                                Responsible and motivated Front-end developer, with experience in creating Landing page and SPA using React, Redux, Typescript. I have good analytical skills. I learn easily and with pleasure. I quickly find a common language with people.
+                                Responsible and motivated Front-end developer, with experience in creating Landing page
+                                and SPA using React, Redux, Typescript. I have good analytical skills. I learn easily
+                                and with pleasure. I quickly find a common language with people.
                             </p>
                             <div className="row">
                                 <div className="col-md-6 col-sm-5">
@@ -40,7 +41,7 @@ const About = () => {
                                 <div className="col-md-6 col-sm-5">
                                     <ul className={styles.aboutInfo}>
                                         <li>
-                                            <h5>Education  :</h5>
+                                            <h5>Education :</h5>
                                             <span>Higher</span>
                                         </li>
                                         <li>
@@ -53,13 +54,12 @@ const About = () => {
                                         </li>
                                     </ul>
                                 </div>
-                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }
 export default About

@@ -20,9 +20,7 @@ const Main = () => {
     }
     return (
         <main className={styles.mainBlock} id={"main"}>
-            <div>
-                <Particles className={styles.particles} params={params}/>
-            </div>
+            <Particles className={styles.particles} params={params}/>
             <div className="container">
                 <div className={`${"row align-items-center justify-content-around"} ${styles.row}`}>
                     <div className="col-lg-7 col-xl-6 col-md-10">
@@ -56,7 +54,7 @@ const Main = () => {
                             <div className={styles.heroImg}>
                                 <div className={styles.borderOuter}>
                                     <div className={styles.borderInner}>
-                                        <img src={photo} alt="photo"/>
+                                        <img src={photo} alt="main photo"/>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +63,6 @@ const Main = () => {
                 </div>
             </div>
         </main>
-
-
     )
 }
 

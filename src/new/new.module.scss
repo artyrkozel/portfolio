@@ -1,10 +1,8 @@
 @import "src/common/styles/variables";
 
 .project {
-  height: 72vh;
   .portfolioImg{
     width: 80%;
-    height: 85%;
     border-radius: 30px;
     box-shadow: -19px 1px 34px -22px black;
   }
@@ -50,9 +48,6 @@
     font-size: 40px;
     color: white;
   }
-}
-.cont {
-  padding: 100px 0;
 }
 .project {
   .headerTitle{
@@ -137,6 +132,9 @@
 @media screen and (max-width: 992px){
 .project{
   height: 100%;
+  .portfolioImg{
+    display: none;
+  }
 }
   .cont{
     padding: 76px 0 20px 0;

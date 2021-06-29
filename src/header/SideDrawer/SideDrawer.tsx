@@ -2,7 +2,6 @@ import React from 'react';
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import { NavLink } from "react-router-dom";
 import {createStyles, makeStyles, Theme} from "@material-ui/core";
 import {Link} from "react-scroll";
 const SideDrawer = (props: any) => {
@@ -19,7 +18,6 @@ const SideDrawer = (props: any) => {
     );
     const classes = useStyles();
     return (
-
             <Drawer
                 anchor={"right"}
                 open={props.open}
@@ -53,6 +51,16 @@ const SideDrawer = (props: any) => {
                     <ListItem button>
                         <Link
                             activeClass="active"
+                            to="education"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Education</Link>
+                    </ListItem>
+                    <ListItem button>
+                        <Link
+                            activeClass="active"
                             to="skills"
                             spy={true}
                             smooth={true}
@@ -82,8 +90,6 @@ const SideDrawer = (props: any) => {
                     </ListItem>
                 </List>
             </Drawer>
-
-
     );
 };
 

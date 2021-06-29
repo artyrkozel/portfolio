@@ -1,14 +1,17 @@
 import React from "react";
 import styles from './Btn.module.scss'
-import {NavLink} from "react-router-dom";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
-const Btn = (props: any) => {
+type btnType = {
+    title: string
+}
+
+const Btn = (props: btnType) => {
     return (
-        <NavLink to={`/new/` + props.id} className={`${styles.maiBtn} ${styles.btn5}`}>
+        <div className={`${styles.maiBtn} ${styles.btn5}`}>
             {props.title}
             <ArrowForwardIcon />
-        </NavLink>
+        </div>
 
     )
 }
