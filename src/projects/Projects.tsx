@@ -9,6 +9,8 @@ import demo3 from "../common/img/demo3.png";
 import demo2 from "../common/img/demo2.png";
 import demo4 from "../common/img/demo4.png";
 import demo1 from "../common/img/demo.png";
+import demo5 from './../common/img/demo5.png'
+
 type detailsType = {
     projectName: string
     stack: string
@@ -24,8 +26,9 @@ export type dataType = {
 const data = [
     {title: 'TodoList',img: demo3, details: {projectName: 'TodoList', stack: 'React, Redux, Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/todolist/#/todolist/'}, description: 'Creation of different todo-sheets, adding / deleting / editing tasks, using Material Ui, login (redux form), using RestApi, redux-toolkit' },
     {title: 'SocialNet',img: demo2, details: {projectName: 'SocialNet', stack: 'React, Redux, Redux-thunk, Typescript', url: 'https://artyrkozel.github.io/socialnet/#/socialnet/login'}, description: 'Implementation of the FLUX cycle, creating a login using Formik (with validation), page navigation (react router dom), the ability to edit a profile, add / change a status, subscribe to users, display a list of cryptocurrencies with the ability to filter, general chat (websocket), Material-Ui design, using RestApi'},
-    {title: 'Movie search',img: demo4, details: {projectName: 'Movie search', stack: 'React, Redux, Redux-saga, Typescript', url: 'https://artyrkozel.github.io/movie-search/#/movie-search/main'}, description: 'Page navigation (react router dom), search for movies on demand, filtering by genre, title, rating. Possibility to add a movie to WatchList. Using scss preprocessor'},
-    {title: 'HTML coding',img: demo1, details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: 'https://artyrkozel.github.io/artyrkozel-artyrkozel-artyrkozel-version.github.io/'}, description: 'Responsive coding, using FlexBox, Grid'}
+    {title: 'Movie search',img: demo4, details: {projectName: 'Movie search', stack: 'React, Redux, Redux-saga, Typescript', url: 'https://artyrkozel.github.io/movie-search/#/movie-search/main'}, description: 'Page navigation (react router dom), search for movies on demand, filtering by genre, title, rating. Possibility to add a movie to WatchList.'},
+    {title: 'HTML coding',img: demo1, details: {projectName: 'HTML coding', stack: 'HTML5/CSS3', url: 'https://artyrkozel.github.io/artyrkozel-artyrkozel-artyrkozel-version.github.io/'}, description: 'Responsive coding, using FlexBox, Grid'},
+    {title: 'Git search',img: demo5, details: {projectName: 'Git search', stack: 'React, Redux, Typescript, Redux-thunk', url: 'https://elated-bose-bea697.netlify.app/'}, description: 'Responsive coding, search for git users, pagination for git repositories'}
 ]
 
 const Projects = () => {
@@ -44,6 +47,7 @@ const Projects = () => {
                     <Project bg={second} id={'1'} title={'SocialNet'} item={data[1]} photo={demo2}/>
                     <Project bg={third} id={'2'} title={'Movie search'} item={data[2]} photo={demo4}/>
                     <Project bg={third} id={'3'} title={'HTML coding'} item={data[3]} photo={demo1}/>
+                    <Project bg={third} id={'4'} title={'Git search'} item={data[4]} photo={demo1}/>
                 </div>
             </div>
         </section>

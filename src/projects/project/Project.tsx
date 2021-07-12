@@ -13,6 +13,7 @@ type projectType = {
 }
 
 const Project = React.memo((props: projectType) => {
+
     const [modalActive, setModalActive] = useState<boolean>(false)
     const onClickHandler = () => {
         setModalActive(true)
